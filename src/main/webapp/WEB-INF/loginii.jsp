@@ -11,13 +11,14 @@
 	<h1>登录</h1>
 	<c:url var ="url" value="/user/loginii.action"/>
 	<form action="${url}" method="post">
+	<h2>${msg}</h2>
 		<div>
 			<label>用户名:</label>
-			<input type="text" name="user.username"/>
+			<input type="text" name="user.username" value="${user.username}"/>
 		</div>
 		<div>
 			<label>密码:</label>
-			<input type="password" name="user.password"/>
+			<input type="password" name="user.password" value=""/>
 		</div>
 		<div>
 			<input type="submit" value="登录"/>

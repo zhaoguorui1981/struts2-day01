@@ -11,14 +11,14 @@
 	<h1>登录</h1>
 	<c:url var ="url" value="/user/login.action"/>
 	<form action="${url}" method="post">
-		<h2>${msg}</h2>
+		
 		<div>
 			<label>用户名:</label>
-			<input type="text" name="username" value="${user.username}"/>
+			<input type="text" name="username" />
 		</div>
 		<div>
 			<label>密码:</label>
-			<input type="password" name="password" value=""/>
+			<input type="password" name="password" />
 		</div>
 		<div>
 			<input type="submit" value="登录"/>
